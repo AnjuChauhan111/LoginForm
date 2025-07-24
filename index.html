@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-side">
+            <img src="images/cartoon.jpg" >
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Login Your Account</h2>
+                </div>
+                <form class="form" id="form">
+                    <div class="input-container">
+                        <label>Email Address</label>
+                        <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" class="field">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="input-container">
+                        <label>Password</label>
+                        <input type="password" name="password" id="password" placeholder="password" autocomplete="off" class="field">
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="forgot-pass">
+                        <a href="#">forgot password?</a>
+                    </div>
+
+                    <input type="submit" value="Login" class="submit-btn">
+                </form>
+            </div>
+            
+        </div>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

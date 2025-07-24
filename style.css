@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+body{
+    min-height: 100vh;
+    background: #f9e63f;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding-inline:2rem;
+}
+html,body{
+    height:100%;
+}
+.main-container{
+    width:100%;
+    height:33rem;
+    max-width: 52rem;
+    background: white;
+    /* display: grid;
+    grid-template-columns: 23rem 1fr; */
+    display: flex;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px ;
+    
+}
+.left-side{
+    flex:1;
+    height:100%;
+    
+    overflow: hidden;
+    position:relative;
+}
+ .right-side {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+ }
+
+ 
+.form-container{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding:4rem;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .3rem;
+}
+.form-header{
+    margin-bottom: 2.5rem;
+}
+.form{
+    
+    width:100%;
+}
+.field{
+    width:100%;
+    height:3rem;
+    background: rgb(243,243,243);
+    border:none;
+    font-size:1rem;
+    padding-inline: 1rem;
+    margin-top: .3rem;
+}
+.field:focus{
+    outline:0;
+}
+label {
+  font-size: 1rem;
+  color: rgb(59, 59, 59);
+}
+.error-msg{
+    color:#ff3860;
+    height:1.2rem;
+}
+.forgot-pass{
+    text-align: right;
+}
+.forgot-pass a{
+    text-decoration: none;
+    font-size:.9rem;
+    color:black;
+}
+.submit-btn{
+    width:100%;
+    height:3rem;
+    background:#bc3b96;
+    border:none;
+    color:white;
+    font-size:1.1rem;
+    margin:2rem 0;
+    
+}
+.submit-btn:hover{
+    background: #d5449e;
+}
+.input-container.error .field{
+    border:.1rem solid #ff3860;
+}
+.input-container.success .field{
+    border:.1rem solid #09c372;
+}
+.left-side img{
+    position:absolute;
+    /* top: 0;
+    left: 0; */
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display:block;
+    
+}
